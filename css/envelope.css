@@ -75,11 +75,6 @@
   padding: 2px 8px;
 }
 
-/* .container-data input[type="date"]::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  filter: invert(1) brightness(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
-} */
-
 .input-eye-wrapper .input-remuneracao {
   width: 100%;
   max-width: 138px;
@@ -361,10 +356,6 @@ input#total-contribuicao-mobile {
     padding: 4px 8px;
   }
 
-  /* .input-eye-wrapper .input-remuneracao {
-    height: auto;
-  } */
-
   .caixa-tributos .title small {
     display: none;
   }
@@ -380,8 +371,7 @@ input#total-contribuicao-mobile {
   }
 
   .container-dados input,
-  .container-data input,
-  .container-remuneracao .input-remuneracao {
+  .container-data input {
     padding: 6px 8px;
   }
 
