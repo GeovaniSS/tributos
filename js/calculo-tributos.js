@@ -31,14 +31,14 @@ function inicializa() {
     ofertaIsraelEl,
   ];
 
-  ["keyup", "touchend"].forEach((event) => {
+  ["keyup", "touchend", "input"].forEach((event) => {
     remuneracaoEl.addEventListener(event, ({ target }) => {
       target.value = formatarValor(target.value);
       calculaTributos();
     });
   });
   tributosElements.forEach((el) => {
-    ["keyup", "touchend"].forEach((event) => {
+    ["keyup", "touchend", "input"].forEach((event) => {
       el.addEventListener(event, ({ target }) => {
         target.value = formatarValor(target.value);
         calculaTotalContribuicao();

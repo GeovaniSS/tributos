@@ -34,7 +34,7 @@ function atualizarDataAtual() {
 
   dataElements.forEach((dataEl) => {
     dataEl.value = formatarData(new Date());
-    ["keyup", "touchend"].forEach((event) => {
+    ["keyup", "touchend", "input"].forEach((event) => {
       dataEl.addEventListener(event, ({ target }) => {
         const data = target.value.replace(/\D/g, "");
         target.value = mascaraData(data);
