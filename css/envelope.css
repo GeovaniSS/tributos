@@ -145,6 +145,7 @@
 }
 
 .caixa-tributos {
+  -webkit-display: flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -360,9 +361,9 @@ input#total-contribuicao-mobile {
     padding: 4px 8px;
   }
 
-  .input-eye-wrapper .input-remuneracao {
+  /* .input-eye-wrapper .input-remuneracao {
     height: auto;
-  }
+  } */
 
   .caixa-tributos .title small {
     display: none;
@@ -379,7 +380,8 @@ input#total-contribuicao-mobile {
   }
 
   .container-dados input,
-  .container-data-remuneracao input {
+  .container-data input,
+  .container-remuneracao .input-remuneracao {
     padding: 6px 8px;
   }
 

@@ -57,36 +57,41 @@ img {
 
 .input-eye-wrapper {
   width: 100%;
+  height: auto;
   position: relative;
 }
 
 .eye {
-  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  display: inline-flex;
-  -webkit-display: inline-flex;
+  appearance: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: none;
-  right: 8px;
+  right: 16px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .eye::before {
   display: block;
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   background: url("../img/icons/eye-on.svg") no-repeat center center / contain;
   content: "";
-  background-repeat: no-repeat;
-  background-position: left top;
   box-sizing: border-box;
   transition: 0.2s;
 }
 
 .eye:checked::before {
   background: url("../img/icons/eye-of.svg") no-repeat center center / contain;
+}
+
+.eye:checked {
+  background-color: none;
+}
+
+input:matches([type="checkbox"], [type="radio"]):checked {
+  background: none;
+  border-color: none;
 }
