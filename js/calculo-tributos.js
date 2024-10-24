@@ -31,18 +31,14 @@ function inicializa() {
     ofertaIsraelEl,
   ];
 
-  ["keyup", "touchend", "input"].forEach((event) => {
-    remuneracaoEl.addEventListener(event, ({ target }) => {
-      target.value = formatarValor(target.value);
-      calculaTributos();
-    });
+  remuneracaoEl.addEventListener("input", ({ target }) => {
+    target.value = formatarValor(target.value);
+    calculaTributos();
   });
   tributosElements.forEach((el) => {
-    ["keyup", "touchend", "input"].forEach((event) => {
-      el.addEventListener(event, ({ target }) => {
-        target.value = formatarValor(target.value);
-        calculaTotalContribuicao();
-      });
+    el.addEventListener("input", ({ target }) => {
+      target.value = formatarValor(target.value);
+      calculaTotalContribuicao();
     });
   });
 }
