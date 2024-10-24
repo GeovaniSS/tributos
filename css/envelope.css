@@ -367,9 +367,12 @@ input#total-contribuicao-mobile {
   }
 
   .container-dados input,
-  .container-data input,
-  .container-remuneracao .input-remuneracao {
+  .container-data input {
     padding: 6px 8px;
+  }
+
+  .container-remuneracao .input-remuneracao {
+    padding: 4px 8px;
   }
 
   .container-footer.mobile {
