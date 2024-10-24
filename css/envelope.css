@@ -352,10 +352,6 @@ input#total-contribuicao-mobile {
     max-width: none;
   }
 
-  .input-eye-wrapper .input-remuneracao {
-    height: auto;
-  }
-
   .caixa-tributos .title small {
     display: none;
   }
@@ -371,7 +367,8 @@ input#total-contribuicao-mobile {
   }
 
   .container-dados input,
-  .container-data input {
+  .container-data input,
+  .container-remuneracao .input-remuneracao {
     padding: 6px 8px;
   }
 
