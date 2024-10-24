@@ -71,13 +71,14 @@
 .container-data input {
   width: 100%;
   max-width: 138px;
+  text-align: center;
   padding: 2px 8px;
 }
 
-.container-data input[type="date"]::-webkit-calendar-picker-indicator {
+/* .container-data input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
   filter: invert(1) brightness(100%) sepia(0%) saturate(0%) hue-rotate(0deg);
-}
+} */
 
 .input-eye-wrapper .input-remuneracao {
   width: 100%;
@@ -443,20 +444,6 @@ input#total-contribuicao-mobile {
     display: none;
   }
 
-  input[type="date"]::-webkit-inner-spin-button,
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    background: none;
-    z-index: -1;
-    -webkit-appearance: none;
-  }
-
-  .container-data input {
-    max-width: none;
-    text-align: center;
-    padding: 0px;
-  }
-
   .container-dados {
     flex-direction: row;
     flex-wrap: wrap;
@@ -491,11 +478,5 @@ input#total-contribuicao-mobile {
 
   .container-footer {
     display: none;
-  }
-}
-
-@-moz-document url-prefix() {
-  .container-data input {
-    padding: 2px 4px;
   }
 }

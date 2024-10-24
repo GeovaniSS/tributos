@@ -59,6 +59,7 @@
   color: var(--white-color);
   padding-left: 1rem;
   font-size: 1.25rem;
+  border-radius: 0px;
 }
 
 .input-container .input::placeholder {
@@ -95,7 +96,10 @@
 .checkbox-container {
   display: flex;
   align-items: center;
-  gap: 0.25rem;
+}
+
+.checkbox-container input {
+  margin-right: 0.5rem;
 }
 
 .css-checkbox {
